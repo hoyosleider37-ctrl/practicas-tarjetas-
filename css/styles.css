@@ -1,90 +1,84 @@
-/* Estilos Generales y Reseteo */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background-color: #f4f7f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+body{
+    background:#f2f2f2;
+    font-family:Arial,sans-serif;
+    padding:40px;
 }
 
-/* Contenedor responsivo */
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
+h1{
+    text-align:center;
+    color:#2351a2;
+    margin-bottom:40px;
 }
 
-/* Bloque Tarjeta (BEM) */
-.card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card{
+    width:280px;
+    background:white;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
-/* Uso de la propiedad Clip-Path en el encabezado de la tarjeta */
-.card__hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    height: 160px;
-    position: relative;
-    /* Recorte diagonal estilizado usando clip-path */
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+.card__header{
+    height:120px;
+    background:#d09ad2;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 70%,
+        0 100%
+    );
 }
 
-.card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
+.card__img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:5px solid white;
+
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
 }
 
-/* Elementos del Contenido (BEM) */
-.card__content {
-    padding: 20px;
-    text-align: center;
+.card__title{
+    margin-top:70px;
+    text-align:center;
 }
 
-.card__title {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 10px;
+.card__text{
+    text-align:center;
+    padding:15px;
+    color:gray;
 }
 
-.card__text {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.card__icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    color:#c57cc6;
+    padding:15px;
 }
 
-.card__button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #25D366; /* Verde de WhatsApp */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.card__button:hover {
-    background-color: #128C7E;
+.card__footer{
+    background:#566dd8;
+    color:white;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
 }
