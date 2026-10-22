@@ -1,29 +1,53 @@
-# Prácticas de CSS y diseño responsivo
+# Práctica Tarjetas Responsivas
 
-Este repositorio reúne ejercicios de maquetación web con CSS Grid. Cada carpeta contiene una práctica independiente con su propio archivo HTML y hoja de estilos.
+## Descripción
 
-## Prácticas
+Proyecto desarrollado para la práctica de Responsive Design utilizando HTML5 y CSS3.
 
-| Carpeta | Tema | Descripción |
-| --- | --- | --- |
-| [`practica-1/`](./practica-1/) | CSS Grid | Organiza cuatro cajas en una cuadrícula mediante filas, columnas y áreas de grid. |
-| [`practica-2/`](./practica-2/) | Posicionamiento con CSS Grid | Distribuye ocho cajas y practica la ubicación y expansión de elementos dentro de la cuadrícula. |
-| [`media-query/`](./media-query/) | Diseño responsivo | Adapta una página con encabezado, contenido, barra lateral, widgets y pie de página a distintos tamaños de pantalla. |
+El objetivo es construir tarjetas responsivas aplicando:
 
-Cada práctica incluye un `README.md` con una explicación más detallada de sus objetivos y estilos.
+- Media Queries
+- Metodología BEM
+- Clip-Path
+- Font Awesome
+- GitHub Pages
 
-## Cómo abrir los ejercicios
+## Tecnologías utilizadas
 
-1. Abre la carpeta de la práctica que quieras revisar.
-2. Abre su archivo `index.html` en un navegador web.
-3. Para experimentar, modifica `css/styles.css` y actualiza la página.
+- HTML5
+- CSS3
+- Responsive Design
+- Media Queries
+- Font Awesome
+- Git y GitHub
 
-No se requiere instalar dependencias ni ejecutar un servidor para explorar estos ejemplos.
+## Estructura del proyecto
 
-## Conceptos trabajados
+```text
+responsive-design-media-query/
+│
+├── index.html
+├── README.md
+└── css/
+    └── style.css
+```
 
-- Contenedores y elementos de CSS Grid.
-- Definición de columnas, filas y espacios entre elementos.
-- Posicionamiento explícito y automático de elementos.
-- Adaptación de layouts mediante media queries.
-- Uso de áreas de grid para organizar secciones de una página.
+## Características
+
+- Diseño responsive para computadoras, tablets y celulares.
+- Uso de metodología BEM para nombrar las clases CSS.
+- Implementación de Clip-Path para la cabecera de las tarjetas.
+- Integración de iconos mediante Font Awesome.
+- Publicación mediante GitHub Pages.
+
+## Autor
+
+Leider Marino Encarnacion Hoyos
+
+## Repositorio
+
+https://github.com/TU-USUARIO/responsive-design-media-query
+
+## GitHub Pages
+
+Pendiente de publicación.
